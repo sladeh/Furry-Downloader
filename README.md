@@ -10,6 +10,12 @@ This project uses NodeJS and will download your favourite images from:
 This project is still very young and contains a lot of bugs, if you find any please report them. To see a list of known bugs check the Known Bugs section.
 To learn how to set it up check out the How to use it section.
 
+![Homepage](http://i.imgur.com/FIDQuBu.png)
+
+![Inkbunny tab](http://i.imgur.com/AKXJ3kT.png)
+
+![Inkbunny in action](http://i.imgur.com/bo3EE33.png)
+
 ##What it should do
 Give people a node-webkit desktop like application where they can crawl (or use the API if it exists) and download their favourite images from furry gallery websites.
 
