@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/frame.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  </head>
+  <body>
+  	<div class="frame">
+  		<div class="frame__title">Furry downloader</div>
+  		<ul class="frame__controls">
+  			<li class="frame__controls_min"><i id="min-window" class="fa fa-minus"></i></li>
+  			<li class="frame__controls_max"><i id="max-window" class="fa fa-chevron-up"></i></li>
+  			<li class="frame__controls_close"><i id="close-window" class="fa fa-times"></i></li>
+  		</ul>
+  	</div>
+  	<div class="main-header">
+  		<div class="main-header__menu-wrapper">
+	  		<ul class="main-header__menu">
+	  			<li><a id="ib" class="main-header__menu-item" href="#inkbunny">INKBUNNY</a></li>
+	  			<li><a id="fa" class="main-header__menu-item" href="#furaffinity">FURAFFINITY</a></li>
+	  			<li><a id="wl" class="main-header__menu-item" href="#weasyl">WEASYL</a></li>
+	  			<li><a id="e6" class="main-header__menu-item" href="#e621">E621</a></li>
+	  		</ul>
+  		</div>
+  	</div>
+    <div class="body"></div>
+  </body>
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript">
+  	var gui = require('nw.gui');
+  	var win = gui.Window.get();
+
+  	document.addEventListener("DOMContentLoaded", function() {
+        $(".frame__title").append(" " + gui.App.manifest.version);
+        
+  		$("#close-window").click(function() {
+  			win.close();
+  		});
+        
+        $.get("https://raw.githubusercontent.com/sladeh/Furry-Downloader/master/README.md", function(data) {
+            $(".body").html("<textarea rows=\"25\" cols=\"100\">" + data + "</textarea>");
+        });
+
+  		$("#max-window").click(function() {
+  			win.maximize();
+  		});
+
+  		$("#min-window").click(function() {
+  			win.minimize();
+  		});
+        
+  		$("#ib").click(function() {
+  			$(".body").load("fractions/inkbunny.html");
+            changeTab();
+            $(this).addClass("active");
+  		});
+
+  		$("#fa").click(function() {
+  			$(".body").load("fractions/comingsoon.html");
+            changeTab();
+            $(this).addClass("active");
+  		});
+        
+        $("#wl").click(function() {
+  			$(".body").load("fractions/comingsoon.html");
+            changeTab();
+            $(this).addClass("active");
+  		});
+        
+        $("#e6").click(function() {
+  			$(".body").load("fractions/comingsoon.html");
+            changeTab();
+            $(this).addClass("active");
+  		});
+        
+        function changeTab() {
+            $("li a").removeClass("active");
+        }
+  	});
+  </script>
+  
+</html>

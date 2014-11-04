@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  </head>
+  <body>
+        <input type="text" id="username">
+        <input type="password" id="password">
+        <button id="login">Log in</button>
+      
+        <div id="logDiv"></div>
+  </body>
+
+  <script src="js/inkbunny.js"></script>
+  <script type="text/javascript">
+    $("#login").click(function() {
+      var uname = $("#username").val();
+      var pass = $("#password").val();
+      authenticate(uname, pass);
+    });
+  </script>
+</html>

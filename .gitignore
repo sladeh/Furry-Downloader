@@ -20,14 +20,17 @@ coverage
 .lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+core/build/Release
 
 # Dependency directory
 # Commenting this out is preferred by some people, see
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
+core/node_modules
 
-furrydownloader/downloads/e621/*
-!furrydownloader/downloads/e621/.gitkeep
-furrydownloader/downloads/inkbunny/*
-!furrydownloader/downloads/inkbunny/.gitkeep
+core/furrydownloader/downloads/e621/*
+!core/furrydownloader/downloads/e621/.gitkeep
+core/furrydownloader/downloads/inkbunny/*
+!core/furrydownloader/downloads/inkbunny/.gitkeep
+downloads/inkbunny/*
+!downloads/inkbunny/.gitkeep

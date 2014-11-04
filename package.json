@@ -1,0 +1,19 @@
+{
+  "name": "Furry Downloader",
+  "main": "index.html",
+  "description": "Favourite image downloader for furry galleries",
+  "version": "1.0",
+  "window": {
+    "title": "Furry downloader",
+    "icon": "icon.png",
+    "toolbar": false,
+    "frame": false,
+    "width": 800,
+    "height": 600,
+    "min_height": 150,
+    "min_width": 400
+  },
+  "dependencies": {
+    "express": "^4.9.8"
+  }
+}

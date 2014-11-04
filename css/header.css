@@ -1,0 +1,29 @@
+.main-header {
+	background-color: #00b0ff;
+	height: 120px;
+	width: 100%;
+	position: relative;
+}
+
+.main-header__menu-wrapper {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+	.main-header__menu {
+		bottom: 0;
+		list-style: none;
+	}
+
+		.main-header__menu-item, .active {
+			color: #FFF;
+			text-decoration: none;
+			padding: 0 10px 0 10px;
+			float: left;
+			position: relative;
+		}
+
+			.main-header__menu-item:hover, .active {
+				border-bottom: 2px solid #ffeb3b;
+			}

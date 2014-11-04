@@ -1,8 +1,4 @@
-#Furry Downloader (v0.8 Galaxtic Kangaroo)
-New in this version:
-- NodeJS packaged with the project
-- Very basic Furaffinity support (read the FA par for more information)
-
+#Furry Downloader (v1.0 Visible Dragon)
 This project uses NodeJS and will download your favourite images from:
 - Inkbunny
 - e621
@@ -14,8 +10,6 @@ This project uses NodeJS and will download your favourite images from:
 This project is still very young and contains a lot of bugs, if you find any please report them. To see a list of known bugs check the Known Bugs section.
 To learn how to set it up check out the How to use it section.
 
-The downloaders are seperate scripts with their own versions and branches since they work seperately. You can (read: have to) run each script on their own and do their own thing. 
-
 ##What it should do
 Give people a node-webkit desktop like application where they can crawl (or use the API if it exists) and download their favourite images from furry gallery websites.
 
@@ -25,17 +19,6 @@ Give people a node-webkit desktop like application where they can crawl (or use 
 - Support for Weasyl
 - Support for SoFurry
 - Node webkit intergration for UI stuff
-
-##What is done
-###Inkbunny
-- Authentication
-- Basic image downloading
-
-###e621
-- Basic image downloading
-
-###Furaffinity
-- Basic image URL fetching
 
 ##How to use it
 ###What you need
